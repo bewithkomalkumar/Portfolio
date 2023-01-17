@@ -1,0 +1,97 @@
+/*   ****Navbar ****** */
+.Navbar {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+
+  padding: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  /* border: 1px solid red; */
+}
+.Navbar > div > h3 {
+  /* color: #f83e47; */
+  margin: 0;
+  /* border: 1px solid red; */
+}
+.Navbar > div {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.Navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+
+  cursor: pointer;
+  margin: 0;
+}
+.Navbar p:hover {
+  font-weight: 700;
+  cursor: pointer;
+  color: #f83e47;
+}
+.Navbar > .hamburger {
+  display: none;
+}
+.Navbar hr {
+  width: 90%;
+  margin: auto;
+}
+.Navbar > :last-child {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .Navbar {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .Navbar > div {
+    margin: auto;
+  }
+  .hide {
+    display: none;
+  }
+  .Navbar a {
+    font-size: 14px;
+  }
+  .Navbar > div:first-of-type {
+    display: none;
+  }
+  .Navbar > :nth-child(3) > i {
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f83e47;
+    z-index: 1;
+  }
+  .Navbar > :nth-child(2) {
+    display: none;
+  }
+  .Navbar > .hamburger {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .Navbar > :last-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .Navbar > :last-child > a {
+    margin: 0px;
+    margin: -10px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  }
+}

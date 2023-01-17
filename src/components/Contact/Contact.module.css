@@ -1,0 +1,51 @@
+.Contact {
+  display: flex;
+
+  height: 100vh;
+
+  text-align: center;
+  align-items: center;
+}
+.H1 {
+  font-size: 38px;
+}
+.Contact > img {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+.Contact > div {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.H1 {
+  font-size: 42px;
+}
+.thanks h1 {
+  text-decoration: none;
+  /* font-size: 38px; */
+}
+.Images {
+  display: flex;
+  width: 60%;
+  margin: 0px auto;
+  padding: 20px;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  .Contact {
+    flex-direction: column;
+    height: 100%;
+  }
+  .Contact > div {
+    width: 90%;
+  }
+  .Images {
+    width: 90%;
+  }
+}

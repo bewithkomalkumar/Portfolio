@@ -1,0 +1,60 @@
+.Education {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 100vh;
+
+  align-items: center;
+}
+.Education h1 {
+  margin: 0;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 38px;
+  /* background-color: red; */
+}
+.card {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card > div {
+  /* border: 1px solid red; */
+  height: 100%;
+  padding: 20px;
+  /* border-radius: 20px; */
+  text-align: justify;
+}
+.card > div img {
+  width: 100%;
+  height: 150px;
+}
+.card > div p {
+  margin: 0;
+  margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+  .Education {
+    height: 100%;
+  }
+  .Education h1 {
+    margin-bottom: 50px;
+  }
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 479px) {
+  .Education {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  .Education h1 {
+    margin-bottom: 50px;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}

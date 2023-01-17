@@ -1,0 +1,52 @@
+.Aboutme {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100vh;
+  margin-left: -50px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Aboutme img {
+  width: 100%;
+}
+.Aboutme h1 {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 38px;
+}
+.Aboutme > div:last-of-type {
+  display: flex;
+  /* border: 1px solid red; */
+
+  flex-direction: column;
+}
+.Aboutme > div li {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-left: 0;
+  line-height: 25px;
+  word-spacing: 3px;
+}
+@media screen and (max-width: 768px) and (min-width: 479px) {
+  .Aboutme {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  .Aboutme h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Aboutme {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  .Aboutme h1 {
+    text-align: center;
+  }
+}

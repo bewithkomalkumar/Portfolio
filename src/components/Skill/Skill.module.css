@@ -1,0 +1,62 @@
+.Skill {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+
+  /* border: 1px solid red; */
+}
+.Skill h1 {
+  font-size: 38px;
+  margin-top: 150px;
+  /* border: 1px solid red; */
+}
+.card {
+  display: grid;
+  gap: 30px;
+  /* justify-content: space-evenly; */
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(5, 1fr);
+}
+.card > div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+
+  padding: 15px 25px;
+}
+.card > div:hover {
+  border: 1px solid #f83e47;
+}
+.card > div img {
+  height: 100px;
+}
+@media screen and (max-width: 768px) and (min-width: 479px) {
+  .Skill {
+    height: 100%;
+  }
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Skill h1 {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Skill {
+    height: 100%;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Skill h1 {
+    margin-bottom: 100px;
+  }
+}
