@@ -1,5 +1,6 @@
 {
   "AboutMe": [
+    "Full Stack Web Developer (MERN Stack).",
     "A React.js developer. Disciplined and Passionate coder with decent problem-solving skill. Star performer of the team, having leadership qualities and a quick learner.",
     " Self Motivated and always Accountable for my work.",
     "Learning Full Stack Web Develpoment from Masai School"
@@ -63,7 +64,7 @@
       "desc": "Own portfolio website where i can showcase my projects and skills",
       "Projecttype": "Individual Project",
       "techstack": "React, context API, CSS,github",
-      "github": "https://github.com/bewithkomalkumar/bewithkomalkumar.github.io",
+      "github": "https://github.com/bewithkomalkumar/Portfolio",
       "live": "",
       "image": "cult"
     }

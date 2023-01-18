@@ -30,9 +30,8 @@ function Name({ heading }) {
           <h1>{name}|</h1>
 
           <p>
-            Aspiring Full Stack Web Developer, Proficient Skilled in Frontend
-            Development and working on my Backend Development Skills for
-            producing the Quality work
+            Full Stack Web Developer, Proficient Skilled in Frontend and Backend
+            Development for producing the Quality work
           </p>
           <div>
             <a

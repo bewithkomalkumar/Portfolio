@@ -17,7 +17,7 @@
   gap: 30px;
   /* justify-content: space-evenly; */
   /* border: 1px solid red; */
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .card > div {
   display: flex;

@@ -9,6 +9,9 @@ import chakra from "../Images/chakra.jpg";
 import bootstrap from "../Images/Bootstrap.png";
 import StyleContext from "../StyleContext";
 import java from "../Images/java.png";
+import express from "../Images/expressjs.png";
+import mongo from "../Images/mongodb.png";
+
 function SkillCard({ des }) {
   const { stylecard } = useContext(StyleContext);
   return (
@@ -24,6 +27,15 @@ function SkillCard({ des }) {
       <div style={stylecard}>
         <img src={node} alt="react" width="100px" />
         <h4>Node js</h4>
+      </div>
+
+      <div style={stylecard}>
+        <img src={express} alt="react" width="100px" />
+        <h4>Express js</h4>
+      </div>
+      <div style={stylecard}>
+        <img src={mongo} alt="react" width="100px" />
+        <h4>Mongo DB</h4>
       </div>
       <div style={stylecard}>
         <img src={html} alt="react" width="100px" />
