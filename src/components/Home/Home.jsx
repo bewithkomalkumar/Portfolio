@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import style from "./Home.module.css";
 import hello from "../Images/hello.png";
+import profile from "../Images/profile.jpg";
 function Name({ heading }) {
   const [name, setName] = useState("");
 
@@ -50,10 +51,7 @@ function Name({ heading }) {
           </div>
         </div>
         <div>
-          <img
-            src="https://media.licdn.com/dms/image/D4D03AQGGwrFlQNYKSA/profile-displayphoto-shrink_800_800/0/1672407535025?e=1678320000&v=beta&t=MdB5cYjCt7Flmk6C48j8ZRCOGL6ltKg82R-9iryAamc"
-            alt="Profile_pic"
-          />
+          <img src={profile} alt="Profile_pic" />
         </div>
         {/* <input type="text" value={name} autoFocus=" true" className="main-name" /> */}
       </div>

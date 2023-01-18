@@ -3,8 +3,11 @@ import st from "./Navbar.module.css";
 import StyleContext from "../StyleContext";
 import { useContext } from "react";
 import { useState } from "react";
+import signature from "../Images/sign.png";
+import signatureW from "../Images/signW.png";
+
 function Navbar() {
-  const { changeStyle, state } = useContext(StyleContext);
+  const { changeStyle, state, theme } = useContext(StyleContext);
   const [darkmode, setDarkmode] = useState("fa-solid fa-moon");
   const ref = useRef(null);
   const [mobile, setMobile] = useState({
@@ -18,7 +21,9 @@ function Navbar() {
   return (
     <div className={st.Navbar} style={mode}>
       <div>
-        <h3 className={st.hide}>KOMAL KUMAR</h3>
+        {/* <h3 className={st.hide}> */}
+        <img src={theme === "light" ? signature : signatureW} alt="signature" />
+        {/* </h3> */}
       </div>
       <div>
         <a style={mode} href="#home">
@@ -69,7 +74,12 @@ function Navbar() {
         >
           <i class="fa-solid fa-bars"></i>
         </button>
-
+        <div>
+          <img
+            src={theme === "light" ? signature : signatureW}
+            alt="signature"
+          />
+        </div>
         <i
           onClick={() => {
             changeStyle();
