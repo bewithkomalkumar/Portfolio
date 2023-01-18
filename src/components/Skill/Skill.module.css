@@ -12,13 +12,13 @@
   margin-top: 150px;
   /* border: 1px solid red; */
 }
-/* .card {
+.card {
   display: grid;
   gap: 30px;
   /* justify-content: space-evenly; */
   /* border: 1px solid red; */
   grid-template-columns: repeat(6, 1fr);
-} */
+}
 .card > div {
   display: flex;
   flex-direction: column;
