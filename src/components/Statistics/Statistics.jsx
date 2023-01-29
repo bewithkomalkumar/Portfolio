@@ -3,8 +3,10 @@ import design from "../Projects/Projects.module.css";
 import githubcal from "../Images/githubcalender.png";
 import StyleContext from "../StyleContext";
 import { useContext } from "react";
+import GitHubCalendar from "react-github-calendar";
 function Statistics() {
   const { theme } = useContext(StyleContext);
+
   return (
     <div id="Stats">
       <h1 style={{ textAlign: "center" }}>My Contribution</h1>
@@ -20,7 +22,13 @@ function Statistics() {
         />
       </div>
       <br />
-      <img src={githubcal} alt="" width="100%" />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <GitHubCalendar
+          username="bewithkomalkumar"
+          hideTotalCount={true}
+          hideColorLegend={true}
+        />
+      </div>
     </div>
   );
 }
