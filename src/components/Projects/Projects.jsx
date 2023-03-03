@@ -7,9 +7,10 @@ import urban from "../Images/urban.png";
 import portfolio from "../Images/portfolio.png";
 import githubcal from "../Images/githubcalender.png";
 import fitnesspal from "../Images/fitnesspal.png";
+import FTA from "../Images/Fullstackapp.png";
 function Projects() {
   const [projects] = useState(data.Projects);
-  const [images] = useState([fitnesspal, cult, urban, portfolio]);
+  const [images] = useState([FTA, fitnesspal, cult, urban, portfolio]);
   const { stylecard, theme } = useContext(StyleContext);
 
   return (
@@ -53,6 +54,25 @@ function Projects() {
               </div>
             );
           })}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <h2>& 14 Mini Projects</h2>
+
+            <a
+              href="https://docs.google.com/spreadsheets/d/1CgUtpoxlHvbisZYMhc-bfUqH5p3bkZ0SNuSsPWlyQv8/edit?usp=sharing"
+              target="_blank"
+            >
+              <button class={design.button24} role="button">
+                Show mini Projects
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </>

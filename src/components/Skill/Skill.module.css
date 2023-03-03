@@ -4,12 +4,14 @@
   align-items: center;
   height: 100vh;
   text-align: center;
+  gap: 20px;
 
   /* border: 1px solid red; */
 }
 .Skill h1 {
   font-size: 38px;
   margin-top: 150px;
+
   /* border: 1px solid red; */
 }
 .card {

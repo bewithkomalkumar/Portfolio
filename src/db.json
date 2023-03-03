@@ -33,6 +33,15 @@
   ],
   "Projects": [
     {
+      "titile": "FULL Stack App | Cultfit Website's Store Clone",
+      "desc": "Product listing store where all the products related to the gyms are listed.",
+      "Projecttype": "Individual Project, completed in 5 days.",
+      "techstack": "NodeJs, Express, MongoDb, React, Cyclic | GitHub",
+      "github": "https://github.com/bewithkomalkumar/Full-Stack-App",
+      "live": "https://cultsport-full-stack-komalkumar.netlify.app/",
+      "image": "cult"
+    },
+    {
       "titile": "MyFitnessPal Website's Clone",
       "desc": "Its an fitness App that helps you to manage your diet as per your current health status.",
       "Projecttype": "collaborative project builtby a team of 4 developers completed in 5 days.",

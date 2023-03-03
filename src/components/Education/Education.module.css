@@ -4,10 +4,11 @@
   height: 100vh;
 
   align-items: center;
+  /* border: 1px solid red; */
 }
 .Education h1 {
   margin: 0;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   text-align: center;
   font-size: 38px;
   /* background-color: red; */
@@ -33,6 +34,7 @@
   margin: 0;
   margin-top: 10px;
 }
+
 @media screen and (max-width: 480px) {
   .Education {
     height: 100%;
