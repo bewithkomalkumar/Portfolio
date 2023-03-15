@@ -38,17 +38,13 @@ function App() {
 
     state ? setState(false) : setState(true);
   };
-  /* 
-  
-  
-  
-  */
+
   return (
     <div className={state ? "A" : "B"} id="App" style={style}>
       <StyleContext.Provider value={{ style, changeStyle, stylecard, theme }}>
         <Navbar />
         <div className="container">
-          <Home heading="I'm Komal Kumar" />
+          <Home heading={"I'm Komal Kumar"} />
           <hr />
           <About />
           <hr />

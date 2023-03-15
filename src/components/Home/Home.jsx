@@ -5,20 +5,15 @@ import hello from "../Images/hello.png";
 import profile from "../Images/profile.jpg";
 function Name({ heading }) {
   const [name, setName] = useState("");
-
   useEffect(() => {
-    const str = `  ${heading} `;
+    setName((prev) => "");
+    const str = heading;
     let i = 0;
-    setTimeout(() => {
-      let id = setInterval(() => {
-        if (i === str.length - 2) {
-          setName(heading);
-          clearInterval(id);
-        }
-        setName((name) => name + str[i]);
-        i++;
-      }, 250);
-    }, 1000);
+    for (let i = 0; i < str.length; i++) {
+      setTimeout(() => {
+        setName((prev) => prev + str[i]);
+      }, i * 300);
+    }
   }, []);
   return (
     <div className={style.home}>
